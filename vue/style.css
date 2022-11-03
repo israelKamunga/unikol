@@ -1,0 +1,115 @@
+.container-fluid{
+    justify-content: space-between;
+}
+nav{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+}
+.nav-link{
+    color: black !important;
+    font-weight: bold;
+}
+
+.logo{
+    width: 4rem;
+    font-weight: bold;
+}
+a{
+    font-family: 'Roboto Condensed';
+}
+
+.nav-link:hover{
+    color: #C8000A !important;
+}
+
+h3{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0px;
+    vertical-align: middle;
+    font-family: 'Roboto Condensed';
+}
+.banniere{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+
+.contentRightCard{
+
+}
+
+.contentRightCardFirstSon{
+    background-color: #34675C;
+    height: auto;
+}
+.contentRightCardLastSon{
+    background-color: white;
+    height: 50%;
+}
+
+.carte{
+    display: flex;
+    margin-top: 20px;
+    margin: auto;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3),-5px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.carte h3{
+    font-family: 'Lato';
+}
+
+.carte div div{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.carte div div h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*Media Query*/
+@media only screen and (min-width: 600px){
+    .nav-link:hover{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        transition: padding 0.5s;
+    }
+    .carte{
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    h3{
+        font-size: 1rem;
+    }
+    a:hover{
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        transition: none;
+    }
+    .carte{
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        border: 1px solid rgb(0,0,0,0.3);
+    }
+    nav{
+        width: 100%;
+        position: fixed !important;
+    }
+    .logo{
+        width: 3rem;
+    }
+}
